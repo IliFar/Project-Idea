@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #48cae4 !important;
+}
+
+body header .container {
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+body header .container .navbar-brand {
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+body main .content {
+  border-radius: 10px;
+  padding-bottom: 20px;
+  background-color: #90e1ef50;
+  color: white;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+body main .project {
+  height: 200px;
+  border-color: white !important;
+  border-radius: 10px;
+  background-color: #48cae4;
+}
+
+body main .project h1 {
+  color: white;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=style.css.map */
