@@ -20,6 +20,19 @@ body header .container .navbar-brand {
   font-size: 25px;
 }
 
+body header .container .nav-link {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  color: black !important;
+}
+
+body header .container .nav-link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 body main .content {
   border-radius: 10px;
   padding-bottom: 20px;
@@ -39,5 +52,18 @@ body main .project {
 body main .project h1 {
   color: white;
   font-weight: bolder;
+}
+
+body footer {
+  height: 100px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+body footer a {
+  text-decoration: none !important;
+  font-size: larger;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

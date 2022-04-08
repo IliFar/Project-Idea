@@ -7,7 +7,7 @@ export class ProjectIdea extends Page {
 
   getElementString() {
     return `
-        <div class="row m-2">
+        <div class="row m-2" id="projectIdea">
             <div class="col m-lg-5 content">
                 <h1 class="text-center pt-3 mb-4">Projektidé Och Prototype</h1>
                 <article class="mb-4 text-center">
@@ -16,9 +16,6 @@ export class ProjectIdea extends Page {
                 <img src="/images/prototyp.svg" alt="">
             </div>
         </div>
-        
-        
-        
         `;
   }
 }

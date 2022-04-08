@@ -65,5 +65,5 @@ export class BusinessPlanPage extends Page{
       </div>
         `
     }
-    
+
 }
