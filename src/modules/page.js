@@ -1,4 +1,4 @@
-
+import $ from "jquery";
 export class Page {
   constructor() {
     this.element = null;
@@ -6,6 +6,7 @@ export class Page {
 
   appendToElement(el) {
     this.createElement();
+    el.empty();
     el.append(this.element);
   }
 
