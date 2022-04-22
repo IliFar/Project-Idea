@@ -1,0 +1,29 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: blue;
+    --text-secondary: grey;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+}
+
+body{
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+#root {
+    margin:2rem;
+    border-radius: 10px;
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+    max-height: fit-content;
+}
