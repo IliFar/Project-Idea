@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Records from "../../../../data/userBloodData.json";
 import { Chart, registerables } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
-import LoadingData from "../recommendation/loadingData.jsx";
+import LoadingData from "../loadingData/loadingData.jsx";
 
 const BloodData = () => {
   const [isLoading, setIsLoading] = useState(false)
@@ -34,7 +34,6 @@ const BloodData = () => {
   console.log(data.labels);
    return (
      <>
-      <LoadingData/>
       <Doughnut 
         data={data}
         height={400}
