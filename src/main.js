@@ -22,9 +22,6 @@ console.log(businessPlan);
 
 for (const navlink of navLinks) {
   navlink.addEventListener("click", () => {
-    let proI = document.getElementById("projectIdea");
-    let busP = document.getElementById("businessplan");
-    let cont = document.getElementById("contact");
     if (navlink.textContent === "Affärsplan") {
       businessPlan.getElementString();
       businessPlan.appendToElement($(main));

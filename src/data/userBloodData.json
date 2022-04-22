@@ -1,0 +1,32 @@
+[
+    {
+        "id": "calc",
+        "name": "Calcium",
+        "DailyValue": 1300
+    },
+    {
+        "id": "mag",
+        "name": "Magnesium",
+        "DailyValue": 420
+    },
+    {
+        "id": "vc",
+        "name": "Vitam C",
+        "DailyValue": 90
+    },
+    {
+        "id": "vd",
+        "name": "Vitam D",
+        "DailyValue": 20
+    },
+    {
+        "id": "vk",
+        "name": "Vitam K",
+        "DailyValue": 120
+    },
+    {
+        "id": "pota",
+        "name": "Potassium",
+        "DailyValue": 4700
+    }
+]
