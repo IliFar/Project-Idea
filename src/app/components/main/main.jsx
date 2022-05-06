@@ -10,13 +10,12 @@ export class Main extends React.Component {
     super();
   }
 
-  localUser = sessionStorage.getItem("username")
+  
   render() {
     return (
       <>
         <div className="main col-7">
-          <User/>
-          {this.localUser && <BloodData/>}
+          <BloodData/>
         </div>
       </>
     );
