@@ -40,22 +40,6 @@ export class Navbar extends React.Component {
             </li>
           </ul>
         </nav>
-        {/* <div className="navbar">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a href="#" className="nav-link">Dashboard</a>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link">Inbox</a>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link">My profile</a>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link">Statistics</a>
-            </li>
-          </ul>
-        </div> */}
       </>
     );
   }
