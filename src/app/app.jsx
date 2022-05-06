@@ -6,7 +6,9 @@ import Home from "./components/pages/home.jsx";
 import PersonalInfo from "./components/pages/personalInfo.jsx";
 import Recipes from "./components/pages/recipes.jsx";
 import Statistics from "./components/pages/statistics.jsx";
+import SignIn from "./components/user/signin/signIn.jsx";
 import SignUp from "./components/user/signup/signUp.jsx";
+import User from "./components/user/user.jsx";
 
 class App extends React.Component {
   render() {
@@ -14,6 +16,7 @@ class App extends React.Component {
       <>
         <Router>
           <Navbar />
+          <User />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/personal" element={<PersonalInfo />} />
@@ -21,7 +24,6 @@ class App extends React.Component {
             <Route path="/recipes" element={<Recipes />} />
           </Routes>
         </Router>
-        <SignUp />
       </>
     );
   }

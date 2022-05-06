@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../../../../../node_modules/bootstrap/dist/css/bootstrap.css";
+import axios from "axios";
 
 export class SignUp extends Component {
   constructor(props) {
@@ -8,6 +9,8 @@ export class SignUp extends Component {
       username: "",
       password: "",
     };
+    this.HandleSubmit = this.HandleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange = (e) => {
@@ -18,15 +21,26 @@ export class SignUp extends Component {
     });
   };
 
-  HandleSubmit = () => {
-      
-  }
+  HandleSubmit = (e) => {
+    let body = {
+      username: this.state.username,
+      password: this.state.password,
+    };
+    axios
+      .post("https://retoolapi.dev/NYHxFL/users", body, {
+        headers: { "Content-Type": "application/json" },
+      })
+      .then((response) => {
+        console.log(response.data);
+      });
+    sessionStorage.setItem("username", this.state.username);
+  };
 
   render() {
     return (
       <section>
-        <h1>Sign in</h1>
-        <form>
+        <h1>Sign Up</h1>
+        <form onSubmit={this.HandleSubmit}>
           <label htmlFor="username">username:</label>
           <input
             name="username"
@@ -45,6 +59,7 @@ export class SignUp extends Component {
             value={this.state.password}
             required
           />
+          <input type="submit" value="submit" />
         </form>
       </section>
     );
