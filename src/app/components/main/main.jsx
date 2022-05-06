@@ -10,7 +10,7 @@ export class Main extends React.Component {
     super();
   }
 
-  localUser = localStorage.getItem("username")
+  localUser = sessionStorage.getItem("username")
   render() {
     return (
       <>

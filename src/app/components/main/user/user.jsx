@@ -5,14 +5,14 @@ export default function User() {
   const [userName, setUserName] = useState();
 
   const handleSubmit = () => {
-    localStorage.setItem("username", userName);
+    sessionStorage.setItem("username", userName);
   };
 
   const handleChange = (e) => {
     setUserName(e.target.value);
   };
 
-    const localUser = localStorage.getItem("username");
+  const localUser = sessionStorage.getItem("username");
 
   return (
     <>
