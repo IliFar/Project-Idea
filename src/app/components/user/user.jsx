@@ -20,8 +20,8 @@ export class User extends Component {
     return (
       <>
         <div className="container">
-            <button onClick={() => {<SignUp formData={this.state} setFormData={this.setState({})}/>}}>Sign up</button>
-            <button onClick={() => {<SignIn/>}}>Sign in</button>
+            <SignUp formData={this.state} />
+
         </div>
       </>
     );
