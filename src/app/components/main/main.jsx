@@ -1,5 +1,4 @@
 import React from "react";
-import User from "./user/user.jsx";
 import BloodData from "./bloodData/bloodData.jsx";
 import "./main.css";
 import "../../../../node_modules/bootstrap/dist/css/bootstrap.css";

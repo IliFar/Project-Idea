@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "../../../../node_modules/bootstrap/dist/css/bootstrap.css";
+import SignIn from "./signin/signIn";
+import SignUp from "./signup/signUp";
 
 export class User extends Component {
   constructor(props) {
@@ -18,8 +20,8 @@ export class User extends Component {
     return (
       <>
         <div className="container">
-            <button onClick={<signUp/>}>Sign up</button>
-            <button onClick={<signIn/>}>Sign in</button>
+            <button onClick={() => {<SignUp formData={this.state} setFormData={this.setState({})}/>}}>Sign up</button>
+            <button onClick={() => {<SignIn/>}}>Sign in</button>
         </div>
       </>
     );
