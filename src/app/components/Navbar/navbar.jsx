@@ -18,22 +18,22 @@ export class Navbar extends React.Component {
             <div>Wellness Plus</div>
           </a>
           <ul className="navbar-nav d-flex flex-column mt-5 w-100 text-center">
-            <li className="nav-item w-100">
+            <li className="nav-item ">
               <a href="#" className="nav-link text-light pl-4">
                 Dashboard
               </a>
             </li>
-            <li className="nav-item w-100">
+            <li className="nav-item ">
               <a href="#" className="nav-link text-light pl-4">
                 Inbox
               </a>
             </li>
-            <li className="nav-item w-100">
+            <li className="nav-item ">
               <a href="#" className="nav-link text-light pl-4">
                 Statistics
               </a>
             </li>
-            <li className="nav-item w-100">
+            <li className="nav-item ">
               <a href="#" className="nav-link text-light pl-4">
                 Other
               </a>
