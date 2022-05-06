@@ -8,7 +8,15 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <User />
+        <Router>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/personal' element={<PersonalInfo/>} />
+          <Route path='/statistics' element={<Statistics/>} />
+          <Route path='/recipes' element={<Recipes/>} />
+        </Routes>
+      </Router>
       </>
     );
   }
