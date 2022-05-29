@@ -1,0 +1,43 @@
+.widget {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 10px;
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+    border-radius: 10px;
+    .left , .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+            font-weight: bold;
+            font-size: 14px;
+            color: rgb(121, 119, 117);
+        }
+
+        .vitamins {
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+        .link {
+            width: max-content ;
+            font-size: 12px;
+            border-bottom: 1px solid grey;
+        }
+
+        .percentage {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            color: rgb(20, 234, 20);
+        }
+
+        .icon {
+            font-size: 30px;
+            color: white;
+            border-radius: 5px;
+            align-self: flex-end;
+        }
+    }
+}

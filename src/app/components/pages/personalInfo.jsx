@@ -1,11 +1,17 @@
-import React, { Component } from 'react'
+import React from "react";
+import Box from "@mui/material/Box";
 
-export class PersonalInfo extends Component {
-  render() {
-    return (
-      <div>personalInfo</div>
-    )
-  }
-}
+const personalInfo = () => {
+  return (
+    <Box
+      bgcolor="yellow"
+      flex={5}
+      p={2}
+      sx={{ display: { xs: { margin: 0 } } }}
+    >
+      PersonalInfo
+    </Box>
+  );
+};
 
-export default PersonalInfo
+export default personalInfo;
