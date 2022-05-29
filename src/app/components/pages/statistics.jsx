@@ -6,9 +6,11 @@ import Box from "@mui/material/Box";
 
 const Statistics = () => {
   
-  useEffect()
+  const [nutrients, setNutrients] = useState([]);
 
- 
+  useEffect(() => {
+    axiosGet(setNutrients);
+  }, []);
 
   Chart.register(...registerables);
   const nutrientsData = {
@@ -34,13 +36,11 @@ const Statistics = () => {
   };
   console.log(nutrientsData.labels);
   return (
-    <Box
-      flex={5}
-      p={2}
-      sx={{ display: { xs: { margin: 0 } } }}
-    >
-      <Bar data={nutrientsData} />
-    </Box>
+    <>
+      <div style={{ height: 200, width: 500 }}>
+        <Bar data={nutrientsData} />
+      </div>
+    </>
   );
 };
 
